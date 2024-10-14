@@ -51,9 +51,11 @@ console.log('Test - test for negative number and return false', isPositive(-26))
 
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
+let foods = ['Burgers', 'Pizza', 'Italian', 'Sushi']
 function getLast(array) {
-
+    return array[array.length - 1];
 }
+console.log('Test - should retrieve last item in array', getLast(foods));
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
