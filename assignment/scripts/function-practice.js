@@ -38,14 +38,16 @@ console.log('Test - should multiple three integers and give result', multiplyThr
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
 function isPositive(number) {
-  if (number > 0) {
-    return;
-  }
-  return;
+    if (number > 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 // Call the function to test each outcome (true & false)
 // Write a separate console.log statement for each outcome
-
+console.log('Test - test for positive number and return true', isPositive(21));
+console.log('Test - test for negative number and return false', isPositive(-26));
 
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
