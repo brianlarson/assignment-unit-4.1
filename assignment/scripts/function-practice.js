@@ -61,11 +61,7 @@ console.log('Test - should retrieve last item in array', getLast(foods));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find(array, value) {
-    if (array.includes(value)) {
-        return true;
-    } else {
-        return false;
-    }
+    return array.includes(value) ? true : false;
 }
 console.log('Test - checks whether or not value ("Pizza") is in array and returns result', find(foods, 'Pizza'));
 
