@@ -29,9 +29,10 @@ console.log('Test - should add two integers and give result', addNumbers(21, 14)
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-
+function multiplyThree(firstNumber, secondNumber, thirdNumber) {
+    return firstNumber * secondNumber * thirdNumber;
 }
+console.log('Test - should multiple three integers and give result', multiplyThree(21, 7, 14));
 
 
 // 5. Function that will return true if a number is positive,
