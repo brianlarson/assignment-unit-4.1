@@ -88,12 +88,18 @@ console.log('Test - checks if letter is first letter in string var', isFirstLett
 
 
 // 9. Function to return the sum of all numbers in an array
+let numbers = [21, 28, 14, 7, 1977, 721];
 function sumAll(array) {
-  let sum = 0;
-  // TODO: loop to add items
-
-  // TODO: return the sum
+    let sum = 0;
+    // TODO: loop to add items
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
+    // TODO: return the sum
+    return sum;
 }
+console.log('Test - numbers array is', numbers);
+console.log('       calculate the sum of all numbers', sumAll(numbers));
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
