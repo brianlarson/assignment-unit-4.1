@@ -76,9 +76,15 @@ console.log('Test - checks whether or not value is in array', find('Honda', cars
 // ----------------------
 // 8. Function to check if a letter is the first letter in a
 //    string. Return true if it is, and false otherwise
+let cohort = 'Saguaro Cohort';
 function isFirstLetter(letter, string) {
-
+    if (letter == string[0]) {
+        return true;
+    } else {
+        return false;
+    }
 }
+console.log('Test - checks if letter is first letter in string var', isFirstLetter('S', cohort));
 
 
 // 9. Function to return the sum of all numbers in an array
