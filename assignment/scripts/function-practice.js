@@ -104,9 +104,18 @@ console.log('       calculate the sum of all numbers', sumAll(numbers));
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-function allPositive() {
-
+const inputArray = [21, 28, 0, 14, -7, 124, 0.23, -4];
+function allPositive(array) {
+    let positiveNumbers = [];
+    for (const value of array) {
+        if (value > 0) {
+            positiveNumbers.push(value);
+        }
+    }
+    return positiveNumbers;
 }
+console.log('Test - input array is', inputArray);
+console.log('       remove negative numbers and return new array', allPositive(inputArray));
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
