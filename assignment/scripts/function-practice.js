@@ -51,7 +51,7 @@ console.log('Test - test for negative number and return false', isPositive(-26))
 
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
-let foods = ['Burgers', 'Pizza', 'Italian', 'Sushi']
+let foods = ['Burgers', 'Pizza', 'Italian', 'Sushi'];
 function getLast(array) {
     return array[array.length - 1];
 }
@@ -60,10 +60,16 @@ console.log('Test - should retrieve last item in array', getLast(foods));
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
-function find(array, value) {
-    return array.includes(value) ? true : false;
+let cars = ['Honda', 'Toyota', 'Tesla', 'Ford', 'Chevy'];
+function find(value, array) {
+    for (const item of array) {
+        if (item === value) {
+            return true;
+        }
+    }
+    return false;
 }
-console.log('Test - checks whether or not value ("Pizza") is in array and returns result', find(foods, 'Pizza'));
+console.log('Test - checks whether or not value is in array', find('Honda', cars));
 
 // ----------------------
 // Stretch Goals
