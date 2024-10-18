@@ -122,6 +122,27 @@ console.log('       remove negative numbers and return new array', allPositive(i
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
 
+// Add up the Numbers from a Single Number:
+// Create a function that takes a number as an argument. Add up all the numbers
+// from 1 to the number you passed to the function. For example, if the input
+// is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
+let numArray = [];
+let result = 0;
+function addUp(num) {
+    if (num > 0) {
+        for (let i = 0; i <= num; i++) {
+            numArray.push(i);
+        }
+        for (let i = 0; i < numArray.length; i++) {
+            result += numArray[i];
+        }
+        return result;
+    } else {
+        return 'Requires positive integer as `num` argument';
+    }
+}
+console.log('Add up numbers from single number (Edabit)', addUp(4));
+
 
 // DO NOT MODIFY
 // Used for automated testing
